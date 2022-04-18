@@ -42,4 +42,10 @@
     .btn-to-top{
         font-size: 50px;
     }
+
+    .link-blue-btn{
+        height: 6%;
+        --btn-width: 40%;
+        font-size: 30px;
+    }
 }
