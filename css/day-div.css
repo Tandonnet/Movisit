@@ -1,0 +1,21 @@
+.day-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.day-div p{
+    font-size: 30px;
+}
+
+@media (orientation:portrait) {
+    .day-div p{
+        font-size: 225%;
+    }
+}

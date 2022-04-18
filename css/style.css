@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+@import url('top.css');
+@import url('main-div.css');
+@import url('day-div.css');
+@import url('responsive.css');
+
+body {
+	font-family: 'League Spartan';
+	background-color: rgb(56, 182, 255);
+	margin: 0;
+}
+
+h1,h2,a,p{
+	color : white;
+	text-align: center;
+}
