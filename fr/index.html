@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="Movisit" content="Experience cinema.">
+	<title>Movisit</title>
+	<link rel="icon" type="image/x-icon" href="../images/logo_transparent.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="..\js\javascript.js"></script>
+</head>
+	
+	<body>
+		<div class="top-bar">
+			<img src="..\images\logo_transparent.png" alt="Movisit logo" id="logo-img" onclick="jumpToAnchor(false)">
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('home')">Accueil</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('trips')">Voyages</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('about')">À propos</h2>
+			</div>
+		</div>
+
+		<div id="home" class="main-div">
+			<h1>BIENVENUE À BORD!</h1>
+			<img src="../images/logo_transparent.png" alt="Movisit logo" width="300px">
+		</div>
+		<div class="main-div" id="trips">
+			<h1>Nos voyages</h1>
+			<div class="grid-2lines" style="--end-opacity:0.1">
+				<div id="downton" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/downton-1.jpg);">
+					<h2>Visitez les lieux de tournage de Downton Abbey</h2>
+                    <p>Faîtes l'expérience de la magnificence des meilleurs châteaux d'Angleterre en visitant les lieux de tournage de Downton Abbey. Découvrez ce que c'est que d'être un Crawley!</p>
+					<a href='downton/?chosenLang=true' type="button">Apprenez-en plus!</a>
+				</div>
+				<div id="got" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/got-1.jpg);">
+					<h2>Visit Game Of Thrones' location</h2>
+                    <p>Marchez dans les pas des héros de Game of Thrones et revivez ses scènes mythiques avec notre circuit Game of Thrones en Irlande ! Un voyage qui vous fera prendre part à la magie de l’histoire de la meilleure série de fantasy de tous les temps.</p>
+					<a href='got/?chosenLang=true' type="button">Apprenez-en plus!</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-div" id="about">
+			<h1>À propos de nous !</h1>
+			<h2>L'équipe</h2>
+			<div class="grid-9cells" style="--end-opacity:0.1">
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/heloise.jpg);">
+					<h2>Héloïse</h2>
+					<p class="member-desc">Héloïse est cheffe des opérations marketing</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/eloi.jpg);">
+					<h2>Eloi</h2>
+					<p class="member-desc">Éloi est le manager du marketing</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/amelie.jpg);">
+					<h2>Amélie</h2>
+					<p class="member-desc">Amélie est en charge du business development</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/nicolas.jpg);">
+					<h2>Nicolas</h2>
+					<p class="member-desc">Nicolas est community manager</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/guillaume.jpg);">
+					<h2>Guillaume</h2>
+					<p class="member-desc">Guillaume est directeur des finances</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/samuel.jpg);">
+					<h2>Samuel</h2>
+					<p class="member-desc">Samuel est le chef du service informatique , il est à l'origine du site.</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/john.jpg);">
+					<h2>John</h2>
+					<p class="member-desc">John est responsable des partenariats</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/camille.jpg);">
+					<h2>Camille</h2>
+					<p class="member-desc">Camille est responsable des relations clients</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(../images/lamia.jpg);">
+					<h2>Lamia</h2>
+					<p class="member-desc">Lamia est PDG du groupe</p>
+				</div>
+			</div>
+		</div>
+        <a href="../?chosenLang=true" class="link-lang-btn">Version anglaise</a>
+		<button class="btn-to-top" onclick="topFunction()">↑</button>
+	</body>
+</html>

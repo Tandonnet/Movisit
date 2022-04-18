@@ -18,3 +18,28 @@ function topFunction(target = 0) {
     document.body.scrollTop = target;
     document.documentElement.scrollTop = target;
 }
+
+function processUser(){
+    if (location.href.includes('fr')) {
+        currentLang = 'fr';
+    } else {
+        currentLang = 'en';
+    }
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    chosenLang = temp[1];
+}
+
+window.onload = function(){
+    var userLang = navigator.language || navigator.userLanguage;
+    processUser();
+    if (!chosenLang || chosenLang == undefined) {
+        if (userLang == 'fr' && currentLang != 'fr') {
+            window.location.href = '/fr/';
+        }
+        else if(userLang == 'en' && currentLang != 'en'){
+            window.location.href = '../';
+        }
+        
+    }
+}

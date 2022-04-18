@@ -10,7 +10,7 @@
     background-size: cover;
 }
 
-.day-div p{
+.day-div p:not(.text-fr){
     font-size: 30px;
 }
 
@@ -41,4 +41,8 @@
 }
 .link-blue-btn:hover, .link-blue-btn:active{
     background-color: rgb(37, 122, 172);
+}
+
+.text-fr{
+    font-size: 25px;
 }
