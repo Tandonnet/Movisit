@@ -48,7 +48,7 @@
 
 .link-lang-btn{
     display: flex;
-    position: sticky;
+    position: fixed;
     align-items: center;
     justify-content: center;
     background-color: rgb(42, 132, 184);
@@ -60,6 +60,7 @@
     border-radius: 12px;
     width: 7%;
     left: 3%;
+    bottom: 1.5%;
     box-sizing: border-boxs;
     height: 10%;
     transition: all 0.2s ease;
