@@ -3,6 +3,7 @@
 @import url('main-div.css');
 @import url('day-div.css');
 @import url('responsive.css');
+@import url('buttons.css');
 
 body {
 	font-family: 'League Spartan';
