@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Movisit" content="Experience cinema.">
+	<title>Downton Abbey's trip</title>
+	<link rel="icon" type="image/x-icon" href="../images/logo_transparent.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="..\js\javascript.js"></script>
+</head>
+	
+	<body>
+		<div class="top-bar" style="position: fixed;">
+			<a href="../">
+				<img src="..\images\logo_transparent.png" alt="Movisit logo" id="logo-img">
+			</a>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('day-1')">Day 1</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('day-2')">Day 2</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('day-3')">Day 3</h2>
+			</div>
+		</div>
+
+		<div class="day-div" id="day-1" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.4) 50%),url(../images/highclere.jpg);">
+			<h1>Day 1</h1>
+			<p>What better way to start your itinerary through the south of England than to visit the iconic setting of Downton Abbey itself? Located in the county of Hampshire, in the south east of England, Highclere Castle is Downton Abbey! Set in over 400 acres of parkland, this Victorian mansion is the real star of the show. The house belongs to the Earl and Countess of Carnarvon, whose family has occupied the premises since 1679. The creator of Downton Abbey is an old friend of the family and had Highclere in mind when writing his story. As the Crawley family home throughout the six seasons and in the film, Highclere Castle is a place steeped in history. Here you can follow in the footsteps of the Crawleys, Anna and Carson on a guided tour of the castle's drawing rooms and servants' quarters, rediscovering some of the most famous locations from the making of the series.
+				Lunch time, 2 hours free time. Take advantage of your free time to have a snack in the on-site tea rooms which serve food from the castle kitchens. 
+				After lunch, drive to Bampton in the Cotswolds, a quintessentially English village that has been used extensively as the setting for the Downton village throughout the TV series. On a walking tour you will see the village church - the site of Lady Mary and Matthew Crawley's wedding - and the house that was used as the Crawley family home. Stroll along the main street, admiring its filming shops and sites such as the fictional Grantham Arms pub.
+				In the evening, stay at the beautiful Vineyard-at-Stockcross Hotel where many of the actors from the series stayed themselves; including actress Maggie Smith.</p>
+		</div>
+		<div class="day-div" id="day-2" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.4) 50%),url(../images/cogges.jpg);">
+			<h1>Day 2</h1>
+			<p>After a good night's sleep, we headed to Cogges Manor Farm. Dating back to the 13th century, this farm appears in the series as Yew Farm in seasons 4, 5 and 6. Here you can discover filming secrets, walk through the gardens and orchards, and even explore the local islands and moat on a special trip to the Windrush River.
+				An hour's drive away is the village of Lacock. Famous for its 13th century abbey, it was also the location for the exterior shots of Carson's charming cottage. The best way to see it is to walk down its main street, Church Street, which first appears in the season finale of the series during the Malton Fair, when Lady Mary's favourite pig wins first prize!
+				Lunch at King John's Hunting Lodge: originally owned by King John, this establishment dates back to 1210, the time of the Magna Carta, and serves food fit for kings!
+				In the afternoon, drive to Bowood Estate and Gardens. Just 20 minutes from Lacock, the majestic grounds of the estate were designed by the legendary 18th century architect and landscape designer Capability Brown and are one of the most iconic masterpieces of his art. You can visit the castle itself, its verdant lawns and Italianate gardens and even enjoy a traditional afternoon tea at the Bowood Hotel, Spa & Golf Resort.
+				The evening and overnight stay is at the Carnarvon Arms, a favourite haunt of many of the actors in the series, where the food and accommodation will make you feel like you've stepped back in time. A stone's throw from Highclere Castle, the restaurant is the former 'gatehouse', so come and enjoy the place. Renovated by the well-known British chef Marco Pierre White, the food on offer is a superb discovery. The warm rustic character of the Carnarvon Arms will leave you with unforgettable memories.</p>
+		</div>
+		<div class="day-div" id="day-3" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.4) 50%),url(../images/blenheim.jpg);">
+			<h1>Day 3</h1>
+			<p>This final day will begin with a visit to the village of Swinbrook, the location of Lady Sybil and Branson's escapade. There you will discover the Swan Inn, a cosy pub hotel where many scenes were filmed.
+				You can enjoy typical British dishes during lunch.
+				Finally, head for Blenheim Palace, a masterpiece of English Baroque architecture. It is also the birthplace of Sir Winston Churchill. The superb state flats are full of priceless works of art and magnificent tapestries. The palace is still inhabited by the Duke of Marlborough. The gardens cover over 754 hectares and include a water garden.
+				The journey draws to a close as we return to London, with a final stop on the way at Yew Tree Farm (Cogges Manor Farm by its real name) to see the sites that were used as a set for Downton Abbey.</p>
+		</div>
+		<a href='../' type="button" class="link-blue-btn">Go back</a>
+		<a href="/fr/downton" class="link-lang-btn" onclick="sessionStorage.setItem('chosenLang',true)">Version française 🇫🇷</a>
+		<button class="btn-to-top" onclick="topFunction()">↑</button>
+	</body>
+</html>

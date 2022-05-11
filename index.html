@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Movisit" content="Experience cinema.">
+	<title>Movisit</title>
+	<link rel="icon" type="image/x-icon" href="images/logo_transparent.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js\javascript.js"></script>
+</head>
+	
+	<body>
+		<div class="top-bar">
+			<img src="images\logo_transparent.png" alt="Movisit logo" id="logo-img" onclick="jumpToAnchor(false)">
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('home')">Home</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('trips')">Trips</h2>
+			</div>
+			<div class="btn-top">
+				<h2 onclick="jumpToAnchor('about')">About</h2>
+			</div>
+		</div>
+
+		<div id="home" class="main-div">
+			<h1>WELCOME ON BOARD!</h1>
+			<img src="images/logo_transparent.png" alt="Movisit logo" width="300px">
+			<h2>Movisit plans trips about your favorite TV shows and movies for you to experience.</h2>
+		</div>
+		<div class="main-div" id="trips">
+			<h1>Our trips</h1>
+			<div class="grid-2lines" style="--end-opacity:0.1">
+				<div id="downton" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/downton-1.jpg);">
+					<h2>Visit Downton Abbey's locations</h2>
+					<p>Experience the magnificence of England's best castles by visiting Downton Abbey's locations. See what it's like to be a Crawley member!</p>
+					<a href='downton' type="button">Discover more!</a>
+				</div>
+				<div id="got" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/got-1.jpg);">
+					<h2>Visit Game Of Thrones' location</h2>
+					<p>Walk in the steps of Game of Thrones' heroes and live its mythic scenes with our Game of Thrones trip in Ireland ! A journey that will make you part of the magical story of the best fantasy series of all time.</p>
+					<a href='got' type="button">Discover more!</a>
+				</div>
+			</div>
+		</div>
+		<div class="main-div" id="about">
+			<h1>About us !</h1>
+			<h2>The team</h2>
+			<div class="grid-9cells" style="--end-opacity:0.1">
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/heloise.jpg);">
+					<h2>Héloïse</h2>
+					<p class="member-desc">Héloïse is the marketing operating officer</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/eloi.jpg);">
+					<h2>Eloi</h2>
+					<p class="member-desc">Eloi is the marketing manager</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/amelie.jpg);">
+					<h2>Amélie</h2>
+					<p class="member-desc">Amélie is the business developer</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/nicolas.jpg);">
+					<h2>Nicolas</h2>
+					<p class="member-desc">Nicolas is the community manager</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/guillaume.jpg);">
+					<h2>Guillaume</h2>
+					<p class="member-desc">Guillaume is the financial director</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/samuel.jpg);">
+					<h2>Samuel</h2>
+					<p class="member-desc">Samuel the IT manager, he's responsible for this website</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/john.jpg);">
+					<h2>John</h2>
+					<p class="member-desc">John is the partnership leader</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/camille.jpg);">
+					<h2>Camille</h2>
+					<p class="member-desc">Camille is the customer relations manager</p>
+				</div>
+				<div style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, var(--end-opacity)) 50%),url(images/lamia.jpg);">
+					<h2>Lamia</h2>
+					<p class="member-desc">Lamia is the CEO of the group</p>
+				</div>
+			</div>
+			<a href="mailto:contact@movisit.net" class="link-blue-btn" id="contact">Contact us !</a>
+		</div>
+		<a href="/fr" class="link-lang-btn" onclick="sessionStorage.setItem('chosenLang',true)">Version française 🇫🇷</a>
+		<button class="btn-to-top" onclick="topFunction()">↑</button>
+	</body>
+</html>
